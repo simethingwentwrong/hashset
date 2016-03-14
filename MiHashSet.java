@@ -120,4 +120,21 @@ public class MiHashSet
         toString = toString + "]";
         return toString;
     }
+    
+     /**
+     * devuelve verdadero si el parámetro es igual al conjunto sobre el que se invoca y falso en otro caso.
+     */
+    public boolean equals(MiHashSet otroConjunto){
+        boolean igual = false;
+        if(otroConjunto.size() == size())
+        {
+            for(int i = 0;i < coleccion.length && igual ; i++){
+                if(!otroConjunto.contains(coleccion[i])){
+                    igual = true;
+                }
+            }
+        }
+
+        return igual;
+    }
 }
