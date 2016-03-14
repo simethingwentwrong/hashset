@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MiHashSet()
+comment1.params=valor
+comment1.target=boolean\ add(int)
+comment1.text=\r\n\ a\u00F1ade\ el\ elemento\ al\ conjunto\ si\ no\ estaba.\ Prueba\r\n\ Devuelve\ verdadero\ en\ caso\ de\ que\ el\ elemento\ no\ estuviera\ presente\ en\ el\ conjunto\ y\ falso\ en\ caso\ contrario.\r\n
+numComments=2

@@ -1,33 +1,35 @@
-
-/**
- * Write a description of class MiHashSet here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MiHashSet
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MiHashSet
-     */
+    private int[] coleccion;
+    
     public MiHashSet()
     {
-        // initialise instance variables
-        x = 0;
+        coleccion = new int[0];
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+    
+     /**
+     * añade el elemento al conjunto si no estaba. Prueba
+     * Devuelve verdadero en caso de que el elemento no estuviera presente en el conjunto y falso en caso contrario.
      */
-    public int sampleMethod(int y)
+    public boolean add(int valor)
     {
-        // put your code here
-        return x + y;
+        boolean noContenido = true;      
+        int[] newColeccion = new int[coleccion.length+1];
+
+        for(int i = 0; i < coleccion.length && noContenido; i++){
+            if(coleccion[i] == valor){
+                noContenido = false;
+            }
+            else{
+                newColeccion[i] = coleccion[i];
+            }
+        }
+
+        if(noContenido){
+            newColeccion[newColeccion.length-1] = valor;
+            coleccion = newColeccion;
+        }
+
+        return noContenido;
     }
 }
