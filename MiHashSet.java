@@ -32,4 +32,12 @@ public class MiHashSet
 
         return noContenido;
     }
+    
+    /**
+     *  vacía el conjunto.
+     */
+    public void clear()
+    {
+        coleccion = new int[0];
+    }
 }
