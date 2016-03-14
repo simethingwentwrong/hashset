@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TestMiHashSet()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TestArrayListInt\r\n
+comment1.params=valorEsperado\ valorObtenido\ nombreFuncion
+comment1.target=int\ testea(java.lang.Object,\ java.lang.Object,\ java.lang.String)
+comment1.text=\r\n\ Testea\ que\ el\ valorEsperado\ sea\ igual\ al\ valorObtenido;\ si\ no\r\n\ son\ iguales\ devuelve\ 1\ y\ muestra\ un\ mensaje\ por\ pantalla;\ si\r\n\ son\ iuales\ devuelve\ 0\ e\ informa\ por\ pantalla\ de\ que\ el\ test\r\n\ indicado\ en\ nombreFuncion\ se\ ha\ pasado\ correctamente\r\n
+numComments=2
