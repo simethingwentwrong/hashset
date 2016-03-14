@@ -95,4 +95,12 @@ public class MiHashSet
         }
         return eliminar;
     }
+    
+    /**
+     * devuelve el número de elementos del conjunto.
+     */
+    public int size(){
+        return coleccion.length;
+    }
+
 }
