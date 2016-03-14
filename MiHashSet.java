@@ -65,4 +65,34 @@ public class MiHashSet
         return coleccion.length==0;
 
     }
+    
+     /**
+     * elimina del conjunto el elemento dado. Si no existiera devuelve falso; si existía en el conjunto devuelve verdadero.
+     */
+    public boolean remove(int elemento)
+    {
+        boolean eliminar = false;
+        if(coleccion.length != 0)
+        {
+            int[] newColeccion  = new int[coleccion.length - 1];
+            for(int index = 0; index < coleccion.length ; index++ )
+            {
+                if (coleccion[index] == elemento){
+                     eliminar = true;
+                }
+                else if(!eliminar){
+                    if(index != coleccion.length - 1 ){
+                        newColeccion[index]   = coleccion[index];
+                    }
+                } 
+                else{
+                    newColeccion[index - 1]   = coleccion[index];
+                }
+            }
+            if(eliminar){ 
+                coleccion   = newColeccion;
+            }
+        }
+        return eliminar;
+    }
 }
